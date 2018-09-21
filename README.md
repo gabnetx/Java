@@ -38,9 +38,6 @@ Some examples of Java Classes that will collect in day
 
 ```shell
 $ git clone https://github.com/gabnetx/Java
-$ cd Java
-$ bundle
-$ rake
 ```
 
 
