@@ -37,7 +37,7 @@ Some examples of Java Classes that will collect in day
 > OR
 
 ```shell
-$ git clone https://github.com/gabnetx/ShellScripts
+$ git clone https://github.com/gabnetx/Java
 $ cd Java
 $ bundle
 $ rake
