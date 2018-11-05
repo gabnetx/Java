@@ -1,4 +1,4 @@
-//- Metodos genericos
+//- Clases que heredan de Animal
 class Dog extends Animal {}
 class Cat extends Animal {}
 class Bird extends Animal {}
