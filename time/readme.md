@@ -5,6 +5,7 @@ https://docs.oracle.com/javase/8/docs/api/java/time/package-frame.html
 
 ```java
 import java.time.LocalDate;
+import java.time.DayOfWeek;
 import java.time.format.DateTimeFormatter;
 public class Tester
 {
