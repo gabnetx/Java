@@ -1,0 +1,20 @@
+Fragmento de código para el timeout
+
+Connection conn = null;
+Statement stmt = null;
+ResultSet rs = null;
+String sql = null;
+stmt = conn.createStatement();
+stmt.setQueryTimeout(30);//El tiempo es en segundos
+rs = stmt.executeQuery(sql);//sql = sentencia a ejecutar
+
+
+setQueryTimeout
+public void setQueryTimeout(int seconds)
+                     throws SQLException
+Sets the number of seconds the driver will wait for a Statement object to execute to the given number of seconds. If the limit is exceeded, an SQLException is thrown.
+Parameters:
+seconds - the new query timeout limit in seconds; zero means unlimited
+Throws:
+SQLException - if a database access error occurs
+
