@@ -7,7 +7,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
-
+ * FIRST SHA256 is not an encryption function, 
+ * SECOND it cannot be decrypted. What you mean is probably reversing it. 
+ * In that case, SHA256 cannot be reversed because it's a one-way function. 
  * @author GMN
  */
 public class MD5_example {
