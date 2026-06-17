@@ -1,0 +1,33 @@
+# Esta es una configuración alternativa para MySQL
+# Para usarla, reemplaza el contenido de application.yml o crea application-prod.yml
+
+spring:
+  application:
+    name: tarea-crud
+  
+  # Configuración de la base de datos MySQL
+  datasource:
+    url: jdbc:mysql://localhost:3306/tareadb?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: tu_contraseña
+  
+  # Configuración de JPA/Hibernate
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+# Configuración del servidor
+server:
+  port: 8080
+
+# Logging
+logging:
+  level:
+    root: INFO
+    com.example.tarea: DEBUG
